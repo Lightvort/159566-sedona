@@ -2,11 +2,222 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+          <nav class="main-navigation">
+            <ul>
+              <!-- class - for display block and floats -->
+              <li class="main-navigation-left"> 
+                <a href="#">Информация</a> 
+              </li>
+              <li class="main-navigation-left">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li class="main-navigation-right">
+                <a href="#">Карта штата</a>
+              </li>
+              <li class="main-navigation-right">
+                <a href="#" >Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="index-logo">
+            <img src="img/index-logo.png" height="70" width="138" alt="City of Sedona">
+          </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hallo-world">
+        <p class="p-welcome">
+          Welcome
+        </p>
+        <p class="p-gorgeous">
+          — to the gorgeous —
+        </p>
+        <h1>Sedona</h1>
+        <q>
+          Because the Grand<br>
+          Canyon sucks!
+        </q>
+        <!-- main picture will be in section-background -->
+        <div class="white-mask"></div>
+      </section>
+      <section class="about">
+        <b class="h2-style"> 
+          Седона - небольшой городок в Аризоне,<br>
+          заслуживающий большего
+        </b>
+        <p class="p-common">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
+        </p>
+        <div class="real-town">
+          <div class="real-town-left">
+            <b class="h2-style"> <!-- don`t use h2-tag, because such text doesn`t have important meaning -->
+              Настоящий<br>
+              городок
+            </b>
+            <p class="p-common">
+              — №1 —
+            </p>
+            <p class="p-common">
+              Седона - не аттракцион<br>
+              для туристов, там течет<br>
+              своя жизнь
+            </p>
+          </div>
+          <div class="real-town-right">
+            <img src="img/real-town.jpg" height="256" width="512" alt="Real town">
+          </div>
+        </div>
+        <div class="live-eat-souvenirs">
+          <div class="live-eat-souvenirs-left">
+            <div class="sprite-house"></div> <!-- sprite-picture in div background -->
+            <b class="h2-style">
+              Жилье
+            </b>
+            <p class="p-common">
+              Рекомендуем пожить<br>
+              в настоящем мотеле,<br>
+              все как в кино!
+            </p>
+          </div>
+          <div class="live-eat-souvenirs-center">
+            <div class="sprite-burger"></div>
+            <b class="h2-style">
+              Еда
+            </b>
+            <p class="p-common">
+              Всегда заказывайте<br>
+              фирменный бургер,<br>
+              вы не разочаруетесь!
+            </p>
+          </div>
+          <div class="live-eat-souvenirs-right">
+            <div class="sprite-souvenir"></div>
+            <b class="h2-style">
+              Сувениры
+            </b>
+            <p class="p-common">
+              Не только китайского,<br>
+              но и местного<br>
+              производства!
+            </p>
+          </div>
+        </div>
+        <div class="devil`s-bridge">
+          <div class="devil`s-bridge-left">
+            <img src="img/devils-bridge.jpg" height="256" width="512" alt="Devil`s bridge">
+          </div>
+          <div class="real-town-right">
+            <b class="h2-style"> 
+              Там есть<br>
+              мост дьявола
+            </b>
+            <p class="p-common">
+              — №2 —
+            </p>
+            <p class="p-common">
+              Да, по нему можно<br>
+              пройти! Если конечно<br>
+              вы осмелитесь
+            </p>
+          </div>
+        </div>
+        <div class="square-road-tourists">
+          <div class="square-road-tourists-left">
+            <b class="h2-style">
+              Небольшая площадь
+            </b>
+            <p class="p-common">
+              — №3 —
+            </p>
+            <p class="p-common">
+              Все достопримеча-<br>
+              тельности находятся<br>
+              очень близко
+            </p>
+          </div>
+          <div class="square-road-tourists-center">
+            <b class="h2-style">
+              Красивая дорога
+            </b>
+            <p class="p-common">
+              — №4 —
+            </p>
+            <p class="p-common">
+              Ехать в Седону из<br>
+              Лас-Вегаса совсем<br>
+              не скучно!
+            </p>
+          </div>
+          <div class="square-road-tourists-right">
+            <b class="h2-style">
+              Мало туристов
+            </b>
+            <p class="p-common">
+              — №5 —
+            </p>
+            <p class="p-common">
+              Большинство едет в<br>
+              Гранд Каньон и<br>
+              толпится там
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="want-to-travel">
+        <div class="got-interested">
+          <b class="h2-style">
+            Заинтересовались?
+          </b>
+          <p class="p-common">
+            Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <button class="get-form">Поиск гостиницы в Седоне</button> <!-- button for transition of "date-form" as in Specification.md -->
+        </div>
+        <div class="date-map">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565775866!2d-111.83015784762638!3d34.85444381525762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1453579215840" width="768" height="593"></iframe> 
+          <form class="search-form" action="#" method="get">
+            <label>Дата заезда:
+              <input type="text" name="date-text" value="24 апреля 2016">
+              <button class="calendar-icon">0xe800</button> <!-- here and lower symbol codes are used from font-demo as in Specification.md - fonts would be activated later? -->
+            </label>
+            <label>Дата выезда:
+              <input type="text" name="date-text" value="4 июля 2016">
+              <button class="calendar-icon">0xe800</button>
+            </label>
+            <label for="stepper-adults">Взрослые:</label>
+              <button class="minus">0xe802</button>
+              <input class="stepper" id="stepper-adults" type="text" value="2"> <!-- either js for buttons either type="number" for input -->
+              <button class="plus">0xe801</button>
+            <label for="stepper-kids">Дети:</label>
+              <button class="minus">0xe802</button>
+              <input class="stepper" id="stepper-kids" type="text" value="0">
+              <button class="plus">0xe801</button>
+            <a class="btn-search" href="search-result.html">Найти</a> <!-- in case js is off -->
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <b class="h2-style">
+          #VisitSedona
+        </b>
+        <section class="footer-social">
+          <a class="social-btn vk" title="ВКонтакте" href="#">ВКонтакте</a>
+          <a class="social-btn fb" title="Facebook" href="#">0x66</a>
+          <a class="social-btn you" title="YouTube" href="#">0xf39e</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Website by</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
