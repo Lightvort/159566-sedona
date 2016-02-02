@@ -7,105 +7,107 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-          <nav class="main-navigation">
-            <ul>
-              <!-- class - for display block and floats -->
-              <li> 
-                <a href="#">Информация</a> 
-              </li>
-              <li class="second-link">
-                <a href="#">Фото и видео</a>
-              </li>
-              <li>
-                <a href="#">Карта штата</a>
-              </li>
-              <li>
-                <a href="#">Гостиницы</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="index-logo">
-            <img src="img/index-logo.svg" height="70" width="138" alt="City of Sedona">
-          </div>
-      </div>
+      <div class="container">        
+        <nav class="main-navigation clearfix">
+          <ul>
+            <li class="to-left"> 
+              <a href="#">Информация</a> 
+            </li>
+            <li class="to-left">
+              <a href="#">Фото и видео</a>
+            </li>
+            <!-- при float: right элементы располагаются в обратном порядке -->
+            <li class="to-right">
+              <a href="#">Гостиницы</a>
+            </li>
+            <li class="to-right">
+              <a href="#">Карта штата</a>
+            </li>
+          </ul>
+        </nav>       
+        <div class="index-logo">
+          <img  src="img/index-logo.svg" height="70" width="138" alt="City of Sedona">
+        </div>
+      </div>      
     </header>
     <main class="container">
       <section class="welcome">
-        <img src="img/welcome-word.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
-        <!-- main picture will be in section-background -->
+        <img src="img/welcome-word.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">       
       </section>
       <section class="about">
         <!-- белую маску вставляем с помощью :before -->
-        <b class="h2-style"> 
-          Седона - небольшой городок в Аризоне, заслуживающий большего
-        </b>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-        <div class="about-content">
-          <div>
+        <div class="about-title">
+          <b class="h2-style"> 
+            Седона - небольшой городок в Аризоне, заслуживающий большего
+          </b>
+        </div>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>        
+        <div class="about-content clearfix">
+          <div class="about-text to-left">
             <b class="h2-style"> <!-- don`t use h2-tag, because such text doesn`t have important meaning -->
-              Настоящий городок
+              Настоящий<br>
+              городок
             </b>
             <p>— №1 —</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div>
-            <img src="img/real-town.jpg" height="384" width="800" alt="Real town"> <!-- для этого фото и для devils-bridge специально указана высота 384px, которая больше, чем оригинал фото в Фотошопе (256px). Это сделано специально, для увеличения видимой части фото, по мере растягивания ширины блока, в соответствии с Specification.md -->
-          </div>
+          <div class="about-img-town to-left"></div>
         </div>
-        <div class="live-eat-souvenirs">
-          <div class="house">
-            <!-- sprite-picture-house in div background -->
+        <div class="live-eat-souvenirs clearfix">
+          <div class="house to-left">
+            <div class="sprite-picture-house"></div>
             <b class="h2-style">
               Жилье
             </b>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="burger">
-            <!-- sprite-picture-burger in div background -->
+          <div class="burger to-left">
+            <div class="sprite-picture-burger"></div>
             <b class="h2-style">
               Еда
             </b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="souvenir">
-            <!-- sprite-picture-souvenir in div background -->
+          <div class="souvenir to-left">
+            <div class="sprite-picture-souvenir"></div> 
             <b class="h2-style">
               Сувениры
             </b>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="about-content">
-          <div>
-            <img src="img/devils-bridge.jpg" height="384" width="800" alt="Devil`s bridge">
-          </div>
-          <div>
+        <div class="about-content clearfix">
+          <div class="about-img-bridge to-left"></div>
+          <div class="about-text to-left">
             <b class="h2-style"> 
-              Там есть мост дьявола
+              Там есть<br>
+              мост дьявола
             </b>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="square-road-tourists">
-          <div>
+        <div class="square-road-tourists clearfix">
+          <div class="to-left">
             <b class="h2-style">
-              Небольшая площадь
+              Небольшая<br>
+              площадь
             </b>
             <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
-          <div>
+          <div class="to-left">
             <b class="h2-style">
-              Красивая дорога
+              Красивая<br>
+              дорога
             </b>
             <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div>
+          <div class="to-left">
             <b class="h2-style">
-              Мало туристов
+              Мало<br>
+              туристов
             </b>
             <p>— №5 —</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -125,21 +127,29 @@
         </div>
         <div class="date">
           <form class="search-form" action="#" method="get">
-            <label for="date-text-in">Дата заезда:</label>
+            <div class="form-date-text">
+              <label for="date-text-in">Дата заезда:</label>
               <input type="text" id="date-text-in" value="24 апреля 2016">
               <i class="calendar-icon"></i>            
-            <label for="date-text-out">Дата выезда:</label>
+            </div>
+            <div>
+              <label for="date-text-out">Дата выезда:</label>
               <input type="text" id="date-text-out" value="4 июля 2016">
               <i class="calendar-icon"></i>
-            <div class="steppers">
-              <label for="stepper-adults">Взрослые:</label>
+            </div>
+            <div class="steppers clearfix">
+              <div class="stepper-adults to-left">
+                <label for="stepper-adults">Взрослые:</label>
                 <button class="minus">-</button>
                 <input id="stepper-adults" type="text" value="2"> 
                 <button class="plus">+</button>
-              <label for="stepper-kids">Дети:</label>
+              </div>
+              <div class="stepper-kids to-right">
+                <label for="stepper-kids">Дети:</label>
                 <button class="minus">-</button>
                 <input id="stepper-kids" type="text" value="0">
                 <button class="plus">+</button>
+              </div>
             </div>
             <button class="btn-search" type="submit">Найти</button>
           </form>
@@ -148,16 +158,16 @@
     </main>
     <footer class="main-footer">
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565775866!2d-111.83015784762638!3d34.85444381525762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1453579215840" width="768" height="593"></iframe> 
-      <div class="container">
-        <section>
+      <div class="footer-container clearfix">
+        <section class="footer-visit to-left">
           #VisitSedona
         </section>
-        <section class="footer-social">
-          <a class="social-btn vk" title="ВКонтакте" href="#">ВКонтакте</a>
-          <a class="social-btn fb" title="Facebook" href="#">Facebook</a>
-          <a class="social-btn you" title="YouTube" href="#">YouTube</a>
+        <section class="footer-social to-left">
+          <a class="social-btn-vk" title="ВКонтакте" href="#">ВК</a>
+          <a class="social-btn-fb" title="Facebook" href="#">Fb</a>
+          <a class="social-btn-you" title="YouTube" href="#">YT</a>
         </section>
-        <section class="footer-copyright">
+        <section class="footer-copyright to-right">
           <p>Website by</p>
           <a href="https://htmlacademy.ru"><img src="img/academy.png" height="39" width="113" alt="HTML Academy"></a>
         </section>

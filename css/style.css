@@ -1,31 +1,549 @@
 body {
   font-size: 14px;
-  line-height: 21px; /* указан минимальный line-height из имеющихся в макете */
-  color: #333333;
+  line-height: 21px; /* указан минимальный line-height из имеющихся в макете */  
   font-weight: normal;
   font-family: "PTSans", "Arial", sans-serif;
   text-transform: uppercase;
+  color: #333333;
+  background-color: #282828;
 }
 
-/* для остальных текстовых стилей прописал только уникальные свойства, без дублирования тех, которые уже прописаны в body */
 
-h2 {
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;  
+/* общие стили */
+
+main, header, footer
+{
+  max-width: 1280px;  
+  margin: 0 auto;
+  background-color: #f2f2f2;
 }
 
-.h2-style {
+.main-header .container,
+main section,
+main .hotel-character,
+main .found-result,
+.footer-container
+{
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;  
+}
+
+.to-left {
+  float: left;
+}
+
+.to-right {
+  float: right;
+  text-align: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2, .h2-style {
   font-size: 21px;
-  line-height: 26px;
-  color: #000000;
+  line-height: 26px;  
   font-weight: bold;
+  color: #000000;
 }
 
 .main-navigation a {
   line-height: 26px;
-  color: #000000;
   font-weight: bold; 
+  color: #000000;  
   text-decoration: none;
+}
+
+
+/* стили хэдэра */
+
+.main-header .container { 
+  position: relative;
+  min-height: 56px;  
+}
+
+.main-navigation ul {
+  padding: 0 6%
+}
+
+.main-navigation li { 
+  width: 20%;
+  padding-top: 15px;
+  list-style: none;  
+}
+
+.index-logo { /* .svg не отображается в Chrome */
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 138px;
+  height: 70px;  
+  margin: 0 auto;
+}
+
+
+/* стили мэйна */
+
+.welcome {
+  background: url(../img/index-background-photo.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.welcome img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+
+.about-title { 
+  width: 440px;
+  margin: 0 auto 38px;
+  padding-top: 61px;
+  text-align: center;
+}
+
+.about p {  
+  text-align: center;
+}
+
+.about-content {
+  margin-top: 56px;
+}
+
+.about-content .about-text {
+  box-sizing: border-box;
+  width: 33%;
+  min-height: 256px;
+  padding-top: 30px;
+  padding-left: 4.6%;
+  padding-right: 4.6%;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.about-text b {
+  color: #ffffff;  
+}
+
+.about-text p {  
+  margin-top: 20px; 
+}
+
+.about-content .about-img-town {
+  width: 67%;
+  min-height: 256px;  
+  background: url(../img/real-town.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 0 -64px;
+}
+
+.live-eat-souvenirs > div {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  min-height: 330px;
+  padding-left: 5.1%;
+  padding-right: 5.1%;
+  text-align: center;
+}
+
+.sprite-picture-house {
+  width: 75px;
+  height: 72px;
+  margin: 60px auto 32px;
+  background: url(../img/sprite-live-eat-souvenirs.png) no-repeat -89px -5px;
+}
+
+.sprite-picture-burger {
+  width: 74px;
+  height: 70px;
+  margin: 60px auto 34px;
+  background: url(../img/sprite-live-eat-souvenirs.png) no-repeat -5px -5px;
+}
+
+.sprite-picture-souvenir {
+  width: 64px;
+  height: 76px;
+  margin: 60px auto 28px;
+  background: url(../img/sprite-live-eat-souvenirs.png) no-repeat -5px -87px;
+}
+
+.about-content .about-img-bridge {
+  width: 67%;
+  min-height: 256px;  
+  background: url(../img/devils-bridge.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 0 -64px;
+}
+
+.square-road-tourists > div {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  min-height: 256px;
+  padding-top: 30px;
+  padding-left: 4.6%;
+  padding-right: 4.6%;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.got-interested {
+  box-sizing: border-box;
+  width: 568px;
+  min-height: 291px;
+  margin: 0 auto;
+  padding-top: 57px; 
+  text-align: center;
+}
+
+.got-interested p {
+  padding-bottom: 52px;
+}
+
+.got-interested .get-form {
+  position: relative;
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: 0;  
+  color: #ffffff;
+}
+
+.search-form {  
+  position: absolute;
+  left: 0; right: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 568px;
+  min-height: 395px;
+  padding: 55px; 
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: right;
+  background-color: #ffffff;  
+}
+
+input[id="date-text-in"], input[id="date-text-out"] {
+  width: 309px;
+  height: 38px;
+  margin-left: 20px;
+  padding-left: 15px;  
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: 0;
+  background-color: #f2f2f2;  
+}
+
+.form-date-text {
+  margin-bottom: 29px;
+}
+
+.steppers {  
+  margin: 30px auto 54px;  
+}
+
+.steppers input, .minus, .plus {
+  width: 38px;
+  height: 38px;  
+  margin: 0 -2px; 
+  font-weight: bold;  
+  text-align: center;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+.stepper-adults .minus {
+  margin-left: 41px;
+}
+
+.stepper-kids .minus {
+  margin-left: 27px;
+}
+
+.btn-search {
+  width: 458px;
+  height: 58px;  
+  font-size: 21px;  
+  line-height: 26px;
+  font-weight: bold;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: 0;  
+  color: #ffffff;  
+}
+
+.main-footer {
+  position: relative;
+  z-index: 0;
+  padding-top: 473px;
+  overflow: hidden;  
+}
+
+.map {
+  position: absolute;
+  z-index: -1;
+  left: 23px;
+  bottom: 0;
+  width: 1200px;
+  height: 593px;
+  border: 0;  
+}
+
+.footer-container > section {
+  width: calc(100% / 3);  
+  min-height: 120px;
+  box-sizing: border-box;  
+  background-color: rgba(255,255,255,0.9);
+}
+
+.footer-visit {
+  padding-top: 47px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin-top: 36px;  
+  text-align: center;
+  line-height: 48px;
+  vertical-align: middle;  
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p,
+.footer-copyright a
+{
+  display: inline-block;  
+  margin-top: 41px;  
+  line-height: 39px;
+  vertical-align: middle;
+}
+
+
+/* дополнительные стили для мэйна страницы search-result */
+
+.hotel-character {  
+  font-size: 14px;
+  line-height: 21px;
+  background: url(../img/search-background-photo.jpg) no-repeat;
+  background-size: 100%;  
+  color: #ffffff;  
+}
+
+.form-infrastructure,
+.form-living-type {
+  width: 25%;
+  padding-left: 6%; 
+}
+
+.form-cost {
+  width: 33%;
+  font-size: 0; /* для ликвидации пробелов в inline-block */
+  text-align: center;  
+}
+
+.form-infrastructure,
+.form-living-type,
+.form-cost
+{
+  box-sizing: border-box;
+  min-height: 217px;
+  margin: 0;  
+  border: 0;
+  padding-top: 30px;  
+}
+
+.form-infrastructure strong,
+.form-living-type strong 
+{
+  display: block;
+  margin-bottom: 28px;  
+}
+
+.form-infrastructure label,
+.form-living-type label 
+{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-cost strong {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;  
+  font-size: 14px;  
+}
+
+.form-cost label {  
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 42%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  text-align: center;
+  font-size: 14px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+}
+
+.form-cost input[type="text"] {
+  width: 30px;
+  border: 0;
+  background: none;
+  color: #ffffff;
+}
+
+.form-cost .cost-range {
+  display: block;
+  margin-bottom: 23px;
+  cursor: pointer;
+}
+
+.btn-show {
+  display: block;
+  width: 137px;
+  height: 36px;
+  margin: 0 auto;  
+  font-size: 14px;
+  line-height: 21px;  
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.found-header {
+  box-sizing: border-box;
+  min-height: 86px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 30px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.sort {
+  margin: 0;
+  padding-left: 48px;
+}
+
+.sort li {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 33px; 
+}
+
+.sort li:first-of-type {
+  padding-right: 40px;
+}
+
+.sort li:nth-of-type(2) a {  
+  color: #81b3d2;
+  text-decoration: none;  
+}
+
+.sort li:nth-of-type(n+3) a {  
+  color: #b2b2b2;
+  text-decoration-line: underline; 
+  /* стили не отображаются в Chrome и IE */
+  text-decoration-style: dotted;
+  text-decoration-color: #81b3d2; 
+}
+
+.found-header p {
+  width: 11px;
+  height: 10px;
+  margin: 0 0 0 12px;
+}
+
+.found-result {
+  box-sizing: border-box;
+  min-height: 150px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 30px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.found-result-content {
+  margin-left: 30px;
+}
+
+.found-result-content h2,
+.found-result-content p,
+.found-result-content a,
+.found-result-rating p,
+.found-result-rating a
+{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.found-result-content div {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;  
+}
+
+.found-result-content p {
+  padding-bottom: 9px;
+}
+
+.btn-know-more,
+.btn-book
+{  
+  padding: 7px 17px;  
+  font-size: 14px;  
+  font-weight: bold;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;  
+  vertical-align: middle;
+}
+
+.btn-know-more {
+  background-color: #81b3d2;  
+}
+
+.btn-book {
+  background-color: #766357;
+}
+
+.hotel-rating {
+  margin-top: 40px;
+  padding: 5px 14px;
+  background-color: #f2f2f2;
 }
