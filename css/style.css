@@ -6,7 +6,7 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
-  margin: 0;
+  margin: 0;  
 }
 
 
@@ -15,9 +15,8 @@ body {
 .container,
 .footer-container
 {
-  max-width: 1280px;
-  min-width: 768px;
-  padding: 0 40px;
+  max-width: 1200px;
+  min-width: 768px;  
   margin: 0 auto;
   background-color: #ffffff;  
 }
@@ -37,22 +36,11 @@ body {
   clear: both;
 }
 
-ul {
-  margin: 0;
-}
-
 h2, .h2-style {
   font-size: 21px;
   line-height: 26px;  
   font-weight: bold;
   color: #000000;
-}
-
-.main-navigation a {
-  line-height: 26px;
-  font-weight: bold; 
-  color: #000000;  
-  text-decoration: none;
 }
 
 
@@ -63,10 +51,22 @@ h2, .h2-style {
   min-height: 56px;  
 }
 
+ul {
+  margin: 0 6%;
+  padding: 0;
+}
+
 .main-navigation li { 
   width: 20%;
-  padding-top: 15px;
+  padding-top: 15px;  
   list-style: none;  
+}
+
+.main-navigation a {
+  line-height: 26px;
+  font-weight: bold; 
+  color: #000000;  
+  text-decoration: none;
 }
 
 .index-logo { /* .svg не отображается в Chrome */
