@@ -19,7 +19,7 @@
               <a href="#">Фото и видео</a>
             </li>
             <li class="to-right">
-              <a href="#">Гостиницы</a>
+              <a class="active-link" href="search-result.html">Гостиницы</a>
             </li>
             <li class="to-right">
               <a href="#">Карта штата</a>
@@ -36,7 +36,7 @@
     <main class="container">
       <form class="hotel-character clearfix" action="#" method="get">      
         <fieldset class="form-infrastructure to-left">
-          <strong>Инфраструктура:</strong>
+          <legend>Инфраструктура:</legend>
           <input type="checkbox" id="ch1" checked>  
             <label for="ch1">Бассейн</label>
           <input type="checkbox" id="ch2">  
@@ -45,7 +45,7 @@
             <label for="ch3">Wi-Fi</label>              
         </fieldset>
         <fieldset class="form-living-type to-left">
-          <strong>Тип жилья:</strong>
+          <legend>Тип жилья:</legend>
           <input type="checkbox" id="ch4" checked>
             <label for="ch4">Гостиница</label>
           <input type="checkbox" id="ch5" checked>
@@ -54,7 +54,7 @@
             <label for="ch6">Апартаменты</label>        
         </fieldset>
         <fieldset class="form-cost to-right">
-          <strong>Стоимость в сутки (р):</strong>
+          <legend>Стоимость в сутки (р):</legend>
           <div class="cost-values">
             <label>от
               <input type="text" value="0">

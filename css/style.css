@@ -126,24 +126,22 @@ h2, .h2-style {
   text-decoration: none;
 }
 
-.main-navigation a:visited {
-  color: #766357;
-}
-
-.main-navigation a:visited:hover {
-  color: #604e43;
-}
-
-.main-navigation a:visited:active {
-  color: rgba(118, 99, 87, 0.3);  
-}
-
 .main-navigation a:hover {
   color: #81b3d2;
 }
 
-.main-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
+.main-navigation a:active,
+.main-navigation .active-link
+{
+  color: #766357;
+}
+
+.main-navigation .active-link:hover {
+  color: #604e43;
+}
+
+.main-navigation .active-link:active {
+  color: rgba(118, 99, 87, 0.3);
 }
 
 .index-logo {
@@ -208,6 +206,10 @@ h2, .h2-style {
 
 .about p {  
   text-align: center;
+}
+
+.about-title + p {
+  padding-bottom: 38px;
 }
 
 .about-content .about-text {
@@ -292,6 +294,10 @@ h2, .h2-style {
   background-position: center;
 }
 
+.square-road-tourists {
+  background-color: #eeeeee;
+}
+
 .square-road-tourists > div {
   width: calc(100% / 3);
   box-sizing: border-box;
@@ -299,8 +305,7 @@ h2, .h2-style {
   padding-top: 50px;
   padding-left: 6.45%;
   padding-right: 6.45%;  
-  text-align: center;
-  background-color: #eeeeee;
+  text-align: center;  
 }
 
 .square-road-tourists > div:nth-child(2) {
@@ -589,6 +594,8 @@ input[id="date-text-out"]:focus
 /* дополнительные стили для мэйна страницы search-result */
 
 .hotel-character {  
+  padding-top: 30px;  
+  min-height: 187px;  
   font-size: 14px;
   line-height: 21px;
   background-color: #5e717c;
@@ -598,8 +605,13 @@ input[id="date-text-out"]:focus
   color: #ffffff;  
 }
 
-.hotel-character strong {
+.hotel-character fieldset {  
+  padding-top: 0;  
+}
+
+.hotel-character legend {    
   font-size: 16px;
+  font-weight: bold;
 }
 
 .form-infrastructure,
@@ -616,8 +628,8 @@ input[type="checkbox"]
 
 input[type="checkbox"] + label {
   position: relative;
-  display: block;
-  margin-bottom: 25px;  
+  display: block;  
+  margin-bottom: 24px;  
   padding-left: 40px;
   cursor: pointer;  
 }
@@ -630,7 +642,7 @@ input[type="checkbox"] + label::before {
   height: 22px;
   font-family: "symbols-sedona";
   font-size: 26px;
-  color: #d9dbdc;
+  color: #ffffff;
 }
 
 input[type="checkbox"]:hover + label::before {
@@ -659,27 +671,25 @@ input[type="checkbox"]:checked:disabled + label::before {
 .form-living-type,
 .form-cost
 {
-  box-sizing: border-box;
-  min-height: 217px;
+  box-sizing: border-box;  
   margin: 0;
   padding-bottom: 0;
   border: 0;
-  outline: 0;
-  padding-top: 28px;  
+  outline: 0;  
 }
 
-.form-infrastructure strong,
-.form-living-type strong 
+.form-infrastructure legend,
+.form-living-type legend 
 {
   display: block;
-  margin-bottom: 26px;  
+  margin-bottom: 25px;  
 }
 
 .form-cost {
   margin-right: 6%;
 }
 
-.form-cost strong {
+.form-cost legend {
   display: block;
   margin-bottom: 10px;
   text-align: left;  
@@ -768,7 +778,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .max-toggle {
-  right: 45px;
+  right: 44px;
 }
 
 .btn-show {
@@ -832,6 +842,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .sort li:nth-of-type(n+3) a:active {
   color: #000000;
+  border-bottom: none;
 }
 
 .found-header p {
@@ -843,6 +854,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .icon-up-dir {
   color: #cdcdcd;
+  cursor: pointer;
 }
 
 .icon-up-dir:hover {
@@ -903,8 +915,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .btn-know-more,
 .btn-book
-{ 
-  margin-left: 3px;
+{  
   padding: 5px 17px;  
   font-size: 14px;  
   font-weight: bold;
