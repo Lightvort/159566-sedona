@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <title>Седона</title>    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic"  type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body><div class="body-shadow">
     <header class="main-header">
       <div class="container">        
         <nav class="main-navigation clearfix">
@@ -26,13 +28,15 @@
           </ul>
         </nav>       
         <div class="index-logo">
-          <img  src="img/index-logo.svg" height="70" width="138" alt="City of Sedona">
+          <object width="138" height="70" type="image/svg+xml" data="img/index-logo.svg">
+            City of Sedona
+          </object>          
         </div>
       </div>      
     </header>
     <main class="container">
-      <section class="welcome">
-        <img src="img/welcome-word.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">       
+      <section class="welcome">        
+        <img src="img/welcome-word.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
       </section>
       <section class="about">
         <!-- белую маску вставляем с помощью :before -->
@@ -55,21 +59,21 @@
         </div>
         <div class="live-eat-souvenirs clearfix">
           <div class="house to-left">
-            <div class="sprite-picture-house"></div>
+            <div class="sprite picture-house"></div>
             <b class="h2-style">
               Жилье
             </b>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="burger to-left">
-            <div class="sprite-picture-burger"></div>
+            <div class="sprite picture-burger"></div>
             <b class="h2-style">
               Еда
             </b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="souvenir to-left">
-            <div class="sprite-picture-souvenir"></div> 
+            <div class="sprite picture-souvenir"></div> 
             <b class="h2-style">
               Сувениры
             </b>
@@ -94,7 +98,7 @@
               площадь
             </b>
             <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримеча&shy;тельности находятся очень близко</p>
           </div>
           <div class="to-left">
             <b class="h2-style">
@@ -130,25 +134,25 @@
             <div class="form-date-text">
               <label for="date-text-in">Дата заезда:</label>
               <input type="text" id="date-text-in" value="24 апреля 2016">
-              <i class="calendar-icon"></i>            
+              <i class="icon-calendar date-in"></i>
             </div>
-            <div>
+            <div class="form-date-text">
               <label for="date-text-out">Дата выезда:</label>
               <input type="text" id="date-text-out" value="4 июля 2016">
-              <i class="calendar-icon"></i>
+              <i class="icon-calendar date-out"></i>
             </div>
             <div class="steppers clearfix">
               <div class="stepper-adults to-left">
                 <label for="stepper-adults">Взрослые:</label>
-                <button class="minus">-</button>
+                <button class="icon-minus"></button>
                 <input id="stepper-adults" type="text" value="2"> 
-                <button class="plus">+</button>
+                <button class="icon-plus"></button>
               </div>
               <div class="stepper-kids to-right">
                 <label for="stepper-kids">Дети:</label>
-                <button class="minus">-</button>
+                <button class="icon-minus"></button>
                 <input id="stepper-kids" type="text" value="0">
-                <button class="plus">+</button>
+                <button class="icon-plus"></button>
               </div>
             </div>
             <button class="btn-search" type="submit">Найти</button>
@@ -165,15 +169,15 @@
           #VisitSedona
         </section>
         <section class="footer-social to-left">
-          <a class="social-btn-vk" title="ВКонтакте" href="#">ВК</a>
-          <a class="social-btn-fb" title="Facebook" href="#">Fb</a>
-          <a class="social-btn-you" title="YouTube" href="#">YT</a>
+          <a class="icon-twitter" title="Twitter" href="https://twitter.com/"></a>
+          <a class="icon-facebook" title="Facebook" href="https://www.facebook.com/"></a>
+          <a class="icon-youtube" title="YouTube" href="https://www.youtube.com/"></a>
         </section>
         <section class="footer-copyright to-right">
           <p>Website by</p>
-          <a href="https://htmlacademy.ru"><img src="img/academy.png" height="39" width="113" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
-  </body>
+  </div></body>
 </html>

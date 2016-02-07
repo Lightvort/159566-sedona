@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - результаты поиска</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic"  type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body><div class="body-shadow">
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation clearfix">
@@ -25,46 +27,50 @@
           </ul>
         </nav>
         <div class="index-logo">
-          <a href="index.html"><img src="img/index-logo.svg" title="Go to home page" height="70" width="138" alt="City of Sedona"></a>
+          <a href="index.html">
+            <object width="138" height="70" type="image/svg+xml" data="img/index-logo.svg">City of Sedona</object>
+          </a>
         </div>
       </div>
     </header>
     <main class="container">
-      <form class="hotel-character clearfix" action="#" method="get">
-      <!-- main picture will be in form-background -->
+      <form class="hotel-character clearfix" action="#" method="get">      
         <fieldset class="form-infrastructure to-left">
           <strong>Инфраструктура:</strong>
-          <label>
-            <input type="checkbox" checked>Бассейн
-          </label>
-          <label>
-            <input type="checkbox">Парковка
-          </label>
-          <label>
-            <input type="checkbox">Wi-Fi
-          </label>
+          <input type="checkbox" id="ch1" checked>  
+            <label for="ch1">Бассейн</label>
+          <input type="checkbox" id="ch2">  
+            <label for="ch2">Парковка</label>
+          <input type="checkbox" id="ch3">             
+            <label for="ch3">Wi-Fi</label>              
         </fieldset>
         <fieldset class="form-living-type to-left">
           <strong>Тип жилья:</strong>
-          <label>
-             <input type="checkbox" checked>Гостиница
-          </label>         
-          <label>
-            <input type="checkbox" checked>Мотель
-          </label>          
-          <label>
-            <input type="checkbox" checked>Апартаменты
-          </label>          
+          <input type="checkbox" id="ch4" checked>
+            <label for="ch4">Гостиница</label>
+          <input type="checkbox" id="ch5" checked>
+            <label for="ch5">Мотель</label>
+          <input type="checkbox" id="ch6" checked>  
+            <label for="ch6">Апартаменты</label>        
         </fieldset>
         <fieldset class="form-cost to-right">
           <strong>Стоимость в сутки (р):</strong>
+          <div class="cost-values">
             <label>от
               <input type="text" value="0">
             </label>
+            <div class="cost-separate"></div>
             <label>до
               <input type="text" value="3000">
-            </label>         
-          <input class="cost-range" type="range" min="0" max="4000" value="3000">
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
           <button class="btn-show" type="submit">Показать</button>
         </fieldset>
       </form>
@@ -86,13 +92,13 @@
             <a href="#">По рейтингу</a>
           </li>
         </ul>        
-        <p class="to-right"></p> <!-- sort-triangle-up -->
-        <p class="to-right"></p> <!-- sort-triangle-down -->
+        <p class="icon-down-dir to-right"></p>
+        <p class="icon-up-dir to-right"></p>
       </section>
       <article class="found-result clearfix">
         <img class="to-left" src="img/amara.jpg" width="135" height="90" alt="Amara Resort & SPA">
         <div class="found-result-content to-left">
-          <h2>Amara Resort & SPA</h2>
+          <a href="#"><h2>Amara Resort & SPA</h2></a>
           <div>
             <p>Гостиница</p>
             <a class="btn-know-more" href="#">Подробнее</a>
@@ -103,14 +109,14 @@
           </div>
         </div>
         <div class="found-result-rating to-right">
-          <p class="hotel-stars">5 STARS</p>
+          <p class="icon-star"></p>
           <div class="hotel-rating">Рейтинг: 8,5</div>
         </div>
       </article>
       <article class="found-result clearfix">
         <img class="to-left" src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
         <div class="found-result-content to-left">
-          <h2>Desert Quail Inn</h2>
+          <a href="#"><h2>Desert Quail Inn</h2></a>
           <div>
             <p>Мотель</p>
             <a class="btn-know-more" href="#">Подробнее</a>
@@ -121,14 +127,14 @@
           </div>
         </div>
         <div class="found-result-rating to-right">
-          <p class="hotel-stars">2 STARS</p>
+          <p class="icon-star"></p>
           <div class="hotel-rating">Рейтинг: 8,9</div>
         </div>
       </article>
       <article class="found-result clearfix">
         <img class="to-left" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         <div class="found-result-content to-left">
-          <h2>Villas at Poco Diablo</h2>
+          <a href="#"><h2>Villas at Poco Diablo</h2></a>
           <div>
             <p>Апартаменты</p>
             <a class="btn-know-more" href="#">Подробнее</a>
@@ -139,7 +145,7 @@
           </div>
         </div>
         <div class="found-result-rating to-right">
-          <p class="hotel-stars">3 STARS</p>
+          <p class="icon-star"></p>
           <div class="hotel-rating">Рейтинг: 9,2</div>
         </div>
       </article>
@@ -150,15 +156,15 @@
           #VisitSedona
         </section>
         <section class="footer-social to-left">
-          <a class="social-btn-vk" title="ВКонтакте" href="#">ВК</a>
-          <a class="social-btn-fb" title="Facebook" href="#">Fb</a>
-          <a class="social-btn-you" title="YouTube" href="#">YT</a>
+          <a class="icon-twitter" title="Twitter" href="https://twitter.com/"></a>
+          <a class="icon-facebook" title="Facebook" href="https://www.facebook.com/"></a>
+          <a class="icon-youtube" title="YouTube" href="https://www.youtube.com/"></a>
         </section>
         <section class="footer-copyright to-right">
           <p>Website by</p>
-          <a href="https://htmlacademy.ru"><img src="img/academy.png" height="39" width="113" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
-  </body>
+  </div></body>
 </html>
