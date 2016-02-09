@@ -2,18 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>    
+    <title>Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic"  type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body><div class="body-shadow">
     <header class="main-header">
-      <div class="container">        
+      <div class="container">
         <nav class="main-navigation clearfix">
           <ul>
-            <li class="to-left"> 
-              <a href="#">Информация</a> 
+            <li class="to-left">
+              <a href="#">Информация</a>
             </li>
             <li class="to-left">
               <a href="#">Фото и видео</a>
@@ -26,26 +26,24 @@
               <a href="#">Карта штата</a>
             </li>
           </ul>
-        </nav>       
+        </nav>
         <div class="index-logo">
-          <object width="138" height="70" type="image/svg+xml" data="img/index-logo.svg">
-            City of Sedona
-          </object>          
+          <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
         </div>
-      </div>      
+      </div>
     </header>
     <main class="container">
-      <section class="welcome">        
+      <section class="welcome">
         <img src="img/welcome-word.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
       </section>
       <section class="about">
         <!-- белую маску вставляем с помощью :before -->
         <div class="about-title">
-          <b class="h2-style"> 
+          <b class="h2-style">
             Седона - небольшой городок в Аризоне, заслуживающий большего
           </b>
         </div>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>        
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         <div class="about-content clearfix">
           <div class="about-text to-left">
             <b class="h2-style"> <!-- don`t use h2-tag, because such text doesn`t have important meaning -->
@@ -83,7 +81,7 @@
         <div class="about-content clearfix">
           <div class="about-img-bridge to-left"></div>
           <div class="about-text to-left">
-            <b class="h2-style"> 
+            <b class="h2-style">
               Там есть<br>
               мост дьявола
             </b>
@@ -127,32 +125,32 @@
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="get-form">Поиск гостиницы в Седоне</button> <!-- button for transition of "date-form" as in Specification.md -->
+          <button class="get-form" type="button">Поиск гостиницы в Седоне</button> <!-- button for transition of "date-form" as in Specification.md -->
         </div>
         <div class="date">
           <form class="search-form" action="#" method="get">
             <div class="form-date-text">
               <label for="date-text-in">Дата заезда:</label>
-              <input type="text" id="date-text-in" value="24 апреля 2016">
+              <input id="date-text-in" type="text" name="date-text-in" value="24 апреля 2016">
               <i class="icon-calendar date-in"></i>
             </div>
             <div class="form-date-text">
               <label for="date-text-out">Дата выезда:</label>
-              <input type="text" id="date-text-out" value="4 июля 2016">
+              <input id="date-text-out" type="text" name="date-text-out" value="4 июля 2016">
               <i class="icon-calendar date-out"></i>
             </div>
             <div class="steppers clearfix">
               <div class="stepper-adults to-left">
                 <label for="stepper-adults">Взрослые:</label>
-                <button class="icon-minus"></button>
-                <input id="stepper-adults" type="text" value="2"> 
-                <button class="icon-plus"></button>
+                <button class="icon-minus" type="button"></button>
+                <input id="stepper-adults" type="text" name="stepper-adults" value="2">
+                <button class="icon-plus" type="button"></button>
               </div>
               <div class="stepper-kids to-right">
                 <label for="stepper-kids">Дети:</label>
-                <button class="icon-minus"></button>
-                <input id="stepper-kids" type="text" value="0">
-                <button class="icon-plus"></button>
+                <button class="icon-minus" type="button"></button>
+                <input id="stepper-kids" type="text" name="stepper-kids" value="0">
+                <button class="icon-plus" type="button"></button>
               </div>
             </div>
             <button class="btn-search" type="submit">Найти</button>
@@ -161,8 +159,8 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="map container">  
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565775866!2d-111.83015784762638!3d34.85444381525762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1453579215840" width="768" height="593"></iframe> 
+      <div class="map container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498367.8352538265!2d-111.81848057501269!3d34.855495864064565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1455034221872" width="768" height="593"></iframe>
       </div>
       <div class="footer-container clearfix">
         <section class="footer-visit to-left">

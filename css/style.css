@@ -1,12 +1,12 @@
 body {
-  margin: 0; 
+  margin: 0;
   font-size: 14px;
-  line-height: 21px; /* указан минимальный line-height из имеющихся в макете */  
+  line-height: 21px; /* указан минимальный line-height из имеющихся в макете */
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #333333;
-  background-color: #f2f2f2;  
+  background-color: #f2f2f2;
 }
 
 .body-shadow {
@@ -87,7 +87,7 @@ body {
 
 h2, .h2-style {
   font-size: 21px;
-  line-height: 26px;  
+  line-height: 26px;
   font-weight: bold;
   color: #000000;
 }
@@ -95,9 +95,9 @@ h2, .h2-style {
 
 /* стили хэдэра */
 
-.main-header .container { 
+.main-header .container {
   position: relative;
-  min-height: 56px;  
+  min-height: 56px;
 }
 
 .main-navigation ul {
@@ -105,10 +105,10 @@ h2, .h2-style {
   padding: 0;
 }
 
-.main-navigation li { 
-  width: 20%;  
-  padding-top: 15px;  
-  list-style: none;  
+.main-navigation li {
+  width: 20%;
+  padding-top: 15px;
+  list-style: none;
 }
 
 .main-navigation li:nth-child(2) {
@@ -121,8 +121,8 @@ h2, .h2-style {
 
 .main-navigation a {
   line-height: 26px;
-  font-weight: bold; 
-  color: #000000;  
+  font-weight: bold;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -151,17 +151,6 @@ h2, .h2-style {
   height: 70px;
   margin: auto;
 }
-.index-logo a {
-  position: relative;
-  display: block;
-  padding: 0;
-}
-
-.index-logo a::after {
-  content: ""; 
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-}
 
 
 /* стили мэйна */
@@ -169,7 +158,7 @@ h2, .h2-style {
 .welcome {
   background-color: #7b8291;
   background: url(../img/index-background-photo.jpg) no-repeat;
-  background-size: cover;  
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -194,17 +183,17 @@ h2, .h2-style {
   height: 37px;
   background: url(../img/main-mask-768.png) no-repeat;
   background-size: 100% 37px;
-  background-position: center;  
+  background-position: center;
 }
 
-.about-title { 
+.about-title {
   width: 440px;
   margin: 0 auto 30px;
   padding-top: 57px;
   text-align: center;
 }
 
-.about p {  
+.about p {
   text-align: center;
 }
 
@@ -218,7 +207,7 @@ h2, .h2-style {
   min-height: 256px;
   padding-top: 49px;
   padding-left: 4.6%;
-  padding-right: 4.6%;  
+  padding-right: 4.6%;
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
@@ -226,16 +215,16 @@ h2, .h2-style {
 
 .about-text b {
   color: #ffffff;
-  line-height: 16px;  
+  line-height: 16px;
 }
 
-.about-text p {  
-  margin-top: 20px; 
+.about-text p {
+  margin-top: 20px;
 }
 
 .about-content .about-img-town {
   width: 67%;
-  min-height: 256px;  
+  min-height: 256px;
   background: url(../img/real-town.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -288,7 +277,7 @@ h2, .h2-style {
 
 .about-content .about-img-bridge {
   width: 67%;
-  min-height: 256px;  
+  min-height: 256px;
   background: url(../img/devils-bridge.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -304,21 +293,21 @@ h2, .h2-style {
   min-height: 256px;
   padding-top: 50px;
   padding-left: 6.45%;
-  padding-right: 6.45%;  
-  text-align: center;  
+  padding-right: 6.45%;
+  text-align: center;
 }
 
 .square-road-tourists > div:nth-child(2) {
   padding-left: 7;
-  padding-right: 7%;  
+  padding-right: 7%;
 }
 
 .square-road-tourists b {
   line-height: 16px;
 }
 
-.square-road-tourists p {  
-  margin-top: 21px; 
+.square-road-tourists p {
+  margin-top: 21px;
 }
 
 .got-interested {
@@ -326,7 +315,7 @@ h2, .h2-style {
   width: 568px;
   min-height: 291px;
   margin: 0 auto;
-  padding-top: 57px; 
+  padding-top: 57px;
   text-align: center;
 }
 
@@ -339,7 +328,7 @@ h2, .h2-style {
   padding-bottom: 36px;
 }
 
-.got-interested .get-form {  
+.got-interested .get-form {
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -359,22 +348,22 @@ h2, .h2-style {
   margin: 0 auto;
 }
 
-.search-form {  
+.search-form {
   position: absolute;
   left: 0; right: 0;
-  z-index: 2;  
+  z-index: 2;
   box-sizing: border-box;
   width: 568px;
   min-height: 395px;
-  padding: 54px;  
+  padding: 54px;
   font-weight: bold;
   text-align: right;
   background-color: #ffffff;
   box-shadow: 0px 0 20px 0px #808080;
 }
 
-.form-date-text {  
-  margin-bottom: 27px;  
+.form-date-text {
+  margin-bottom: 27px;
   text-align: left;
 }
 
@@ -386,28 +375,29 @@ label[for="date-text-out"] {
   padding-right: 15px;
 }
 
-input[id="date-text-in"], input[id="date-text-out"] 
-{  
-  width: 330px;
-  height: 38px;  
-  padding-left: 15px;  
+input[id="date-text-in"], input[id="date-text-out"]
+{
+  width: 297px;
+  height: 38px;
+  padding-left: 15px;
+  padding-right: 33px;
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
   border: 0;
   outline: 0;
-  background-color: #f2f2f2;  
+  background-color: #f2f2f2;
 }
 
 input[id="date-text-in"]:hover,
-input[id="date-text-out"]:hover 
-{  
-  background-color: #ebebeb;  
+input[id="date-text-out"]:hover
+{
+  background-color: #ebebeb;
 }
 
 input[id="date-text-in"]:focus,
-input[id="date-text-out"]:focus 
-{  
+input[id="date-text-out"]:focus
+{
   background-color: #ffffff;
   box-shadow: inset 0 0 0 2px #ebebeb;
 }
@@ -415,7 +405,7 @@ input[id="date-text-out"]:focus
 .icon-calendar {
   position: absolute;
   width: 21px;
-  height: 22px;  
+  height: 22px;
   font-size: 21px;
   color: #c2c2c2;
   font-style: normal;
@@ -437,14 +427,14 @@ input[id="date-text-out"]:focus
   color: #81b3d2;
 }
 
-.steppers {  
-  margin: 30px auto 54px;  
+.steppers {
+  margin: 30px auto 54px;
 }
 
-.steppers input, .icon-minus, .icon-plus {  
+.steppers input, .icon-minus, .icon-plus {
   width: 38px;
-  height: 38px;  
-  margin: 0 -2px;   
+  height: 38px;
+  margin: 0 -2px;
   text-align: center;
   border: 0;
   outline: 0;
@@ -473,8 +463,8 @@ input[id="date-text-out"]:focus
 
 .btn-search {
   width: 458px;
-  height: 58px;  
-  font-size: 21px;  
+  height: 58px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -482,7 +472,7 @@ input[id="date-text-out"]:focus
   background-color: #81b3d2;
   border: 0;
   outline: 0;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .btn-search:hover {
@@ -499,15 +489,15 @@ input[id="date-text-out"]:focus
 
 .map {
   position: relative;
-  z-index: 0;
+  z-index: -1;
   min-height: 473px;
   overflow: hidden;
 }
 
 .map iframe {
   position: absolute;
-  z-index: -1;  
-  top: 0;  
+  z-index: -2;
+  top: 0;
   left: 0;
   width: 100%;
   height: 593px;
@@ -516,9 +506,9 @@ input[id="date-text-out"]:focus
 }
 
 .footer-container > section {
-  width: calc(100% / 3);  
+  width: calc(100% / 3);
   min-height: 120px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   background-color: rgba(255,255,255,0.9);
 }
 
@@ -543,7 +533,7 @@ input[id="date-text-out"]:focus
   text-align: center;
   font-size: 19px;
   line-height: 48px;
-  vertical-align: middle;  
+  vertical-align: middle;
   text-decoration: none;
   color: #ffffff;
   background-color: #81b3d2;
@@ -565,19 +555,19 @@ input[id="date-text-out"]:focus
 .footer-copyright p,
 .footer-copyright a
 {
-  display: inline-block;  
-  vertical-align: top;  
+  display: inline-block;
+  vertical-align: top;
   margin-top: 41px;
 }
 
-.footer-copyright p {  
+.footer-copyright p {
   margin-right: 5px;
   line-height: 39px;
 }
 
-.footer-copyright a {  
+.footer-copyright a {
   height: 39px;
-  width: 113px; 
+  width: 113px;
   background: url(../img/academy-spritesheet.png) no-repeat;
   background-position: -5px -5px;
 }
@@ -593,23 +583,23 @@ input[id="date-text-out"]:focus
 
 /* дополнительные стили для мэйна страницы search-result */
 
-.hotel-character {  
-  padding-top: 30px;  
-  min-height: 187px;  
+.hotel-character {
+  padding-top: 30px;
+  min-height: 187px;
   font-size: 14px;
   line-height: 21px;
   background-color: #5e717c;
-  background: url(../img/search-background-photo.jpg) no-repeat;  
-  background-size: cover;  
+  background: url(../img/search-background-photo.jpg) no-repeat;
+  background-size: cover;
   overflow: hidden;
-  color: #ffffff;  
+  color: #ffffff;
 }
 
-.hotel-character fieldset {  
-  padding-top: 0;  
+.hotel-character fieldset {
+  padding-top: 0;
 }
 
-.hotel-character legend {    
+.hotel-character legend {
   font-size: 16px;
   font-weight: bold;
 }
@@ -618,7 +608,7 @@ input[id="date-text-out"]:focus
 .form-living-type {
   width: 31.5%;
   max-width: 250px;
-  padding-left: 6%;  
+  padding-left: 6%;
 }
 
 input[type="checkbox"]
@@ -628,10 +618,10 @@ input[type="checkbox"]
 
 input[type="checkbox"] + label {
   position: relative;
-  display: block;  
-  margin-bottom: 24px;  
+  display: block;
+  margin-bottom: 24px;
   padding-left: 40px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 input[type="checkbox"] + label::before {
@@ -662,27 +652,27 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .form-cost {
-  width: 29%;  
+  width: 29%;
   font-size: 0; /* для ликвидации пробелов в inline-block */
-  text-align: center;  
+  text-align: center;
 }
 
 .form-infrastructure,
 .form-living-type,
 .form-cost
 {
-  box-sizing: border-box;  
+  box-sizing: border-box;
   margin: 0;
   padding-bottom: 0;
   border: 0;
-  outline: 0;  
+  outline: 0;
 }
 
 .form-infrastructure legend,
-.form-living-type legend 
+.form-living-type legend
 {
   display: block;
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
 }
 
 .form-cost {
@@ -692,11 +682,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 .form-cost legend {
   display: block;
   margin-bottom: 10px;
-  text-align: left;  
-  font-size: 14px;  
+  text-align: left;
+  font-size: 14px;
 }
 
-.cost-values {  
+.cost-values {
   position: relative;
   box-sizing: border-box;
   max-width: 316px;
@@ -706,21 +696,22 @@ input[type="checkbox"]:checked:disabled + label::before {
   overflow: hidden;
 }
 
-.cost-values label {  
-  display: inline-block;  
+.cost-values label {
+  display: inline-block;
+  vertical-align: middle;
   width: 42%;
-  margin: 0;  
+  margin: 0;
   padding-top: 6px;
   padding-left: 16px;
-  padding-bottom: 6px;   
-  font-size: 14px;  
+  padding-bottom: 6px;
+  font-size: 14px;
 }
 
-.cost-values label:nth-child(3) {  
-  padding-left: 9px;  
+.cost-values label:nth-child(3) {
+  padding-left: 9px;
 }
 
-.cost-separate { 
+.cost-separate {
   position: absolute;
   left: 50%; top: 6px;
   height: 22px;
@@ -741,26 +732,25 @@ input[type="checkbox"]:checked:disabled + label::before {
   height:30px;
   max-width: 302px;
   margin: 0 auto;
-  padding-left: 15px;  
+  padding-left: 15px;
   overflow:hidden;
 }
 
 .scale {
-  margin-top:15px;  
+  margin-top:15px;
   height:2px;
-  background:#ffffff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .scale .bar {
-  width: 44px;
-  margin-left: auto;
+  width: 80%;
   height:2px;
-  background:#716261;  
+  background: #ffffff;
 }
 
 .toggle {
   position:absolute;
-  top:6px;  
+  top:6px;
   width:4px;
   height:4px;
   border:8px solid white;
@@ -774,20 +764,20 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .min-toggle {
-  left:0px;
+  left: 0%;
 }
 
 .max-toggle {
-  right: 44px;
+  left: 80%;
 }
 
 .btn-show {
   display: block;
   width: 137px;
   height: 36px;
-  margin: 16px auto 0;  
+  margin: 16px auto 0;
   font-size: 14px;
-  line-height: 21px;  
+  line-height: 21px;
   text-transform: uppercase;
   background: none;
   border: 2px solid #ffffff;
@@ -818,22 +808,22 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: inline-block;
   vertical-align: top;
   padding-right: 33px;
-  font-size: 12px;  
+  font-size: 12px;
 }
 
 .sort li:first-of-type {
   padding-right: 40px;
 }
 
-.sort li:nth-of-type(2) a {  
+.sort li:nth-of-type(2) a {
   color: #81b3d2;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
-.sort li:nth-of-type(n+3) a {  
+.sort li:nth-of-type(n+3) a {
   color: #b2b2b2;
-  text-decoration: none; 
-  border-bottom: 1px dotted #81b3d2;  
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort li:nth-of-type(n+3) a:hover {
@@ -865,17 +855,22 @@ input[type="checkbox"]:checked:disabled + label::before {
   color: #81b3d2;
 }
 
-.icon-down-dir {  
+.icon-down-dir {
   color: #8ab8d5;
 }
 
-.found-result {  
+.found-result {
   box-sizing: border-box;
   min-height: 150px;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 30px;
-  border-bottom: 2px solid #e5e5e5;  
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.found-result img {
+  width: 135px;
+  height: 90px;
 }
 
 .found-result-content {
@@ -892,7 +887,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 {
   margin-top: 0;
   margin-bottom: 0;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .found-result-content h2:hover {
@@ -900,13 +895,13 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .found-result-content h2:active {
-  color: rgba(0, 0, 0, 0.3);  
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .found-result-content div {
   display: inline-block;
   vertical-align: top;
-  margin-top: 8px;  
+  margin-top: 8px;
 }
 
 .found-result-content p {
@@ -915,19 +910,19 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .btn-know-more,
 .btn-book
-{  
-  padding: 5px 17px;  
-  font-size: 14px;  
+{
+  padding: 5px 17px;
+  font-size: 14px;
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
-  color: #ffffff;  
-  text-transform: uppercase;  
+  color: #ffffff;
+  text-transform: uppercase;
   vertical-align: middle;
 }
 
 .btn-know-more {
-  background-color: #81b3d2;  
+  background-color: #81b3d2;
 }
 
 .btn-know-more:hover {
@@ -952,7 +947,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   background-color: #503e33;
 }
 
-.icon-star {  
+.icon-star {
   font-size: 19px;
   color: #81b3d2;
 }
@@ -970,7 +965,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .found-result:nth-of-type(2) .icon-star::before {
-  content: "\2605 \00a0 \2605";  
+  content: "\2605 \00a0 \2605";
 }
 
 .found-result:nth-of-type(3) .icon-star {
