@@ -37,7 +37,6 @@
         <img src="img/welcome-word.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
       </section>
       <section class="about">
-        <!-- белую маску вставляем с помощью :before -->
         <div class="about-title">
           <b class="h2-style">
             Седона - небольшой городок в Аризоне, заслуживающий большего
@@ -71,7 +70,7 @@
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="souvenir to-left">
-            <div class="sprite picture-souvenir"></div> 
+            <div class="sprite picture-souvenir"></div>
             <b class="h2-style">
               Сувениры
             </b>
@@ -125,7 +124,7 @@
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="get-form" type="button">Поиск гостиницы в Седоне</button> <!-- button for transition of "date-form" as in Specification.md -->
+          <button class="get-form" type="button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="date">
           <form class="search-form" action="#" method="get">
@@ -177,5 +176,9 @@
         </section>
       </div>
     </footer>
-  </div></body>
+  </div>
+    <script>
+      var button = document.querySelector(".get-form"),form = document.querySelector(".search-form"),datein = form.querySelector("[id=date-text-in]"),dateout = form.querySelector("[id=date-text-out]"),adults = form.querySelector("[id=stepper-adults]"),kids = form.querySelector("[id=stepper-kids]");button.addEventListener("click", function(event) {if (!form.classList.contains("animation-form-open")) {event.preventDefault();form.classList.remove("animation-form-close");form.classList.add("animation-form-open");}else {event.preventDefault();form.classList.remove("animation-form-open");form.classList.remove("animation-form-error");form.classList.add("animation-form-close");}});window.addEventListener("keydown", function(event){if (event.keyCode === 27){if (form.classList.contains("animation-form-open")){form.classList.remove("animation-form-open");form.classList.remove("animation-form-error");form.classList.add("animation-form-close");}}});form.addEventListener("submit", function(event){if(!datein.value||!dateout.value||!adults.value||!kids.value){event.preventDefault();form.classList.remove("animation-form-error");form.offsetWidth=form.offsetWidth;form.classList.add("animation-form-error");}});
+    </script>
+  </body>
 </html>
