@@ -224,7 +224,7 @@ h2, .h2-style {
 .about-content .about-img-town {
   width: 67%;
   min-height: 256px;
-  background: url(../img/real-town.jpg) no-repeat;
+  background: url(../img/real-town.jpg) no-repeat #81b3d2;
   background-size: cover;
   background-position: center;
 }
@@ -277,7 +277,7 @@ h2, .h2-style {
 .about-content .about-img-bridge {
   width: 67%;
   min-height: 256px;
-  background: url(../img/devils-bridge.jpg) no-repeat;
+  background: url(../img/devils-bridge.jpg) no-repeat #81b3d2;
   background-size: cover;
   background-position: center;
 }
@@ -609,7 +609,7 @@ input[id="date-text-out"]:focus
 
 .map {
   min-height: 593px;
-  background: url(../img/index-map.png) no-repeat;
+  background: url(../img/index-map.png) no-repeat #81b3d2;
   background-position: center;
   overflow: hidden;
 }
