@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона - форма поиска</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic"  type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body><div class="body-shadow">
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation clearfix">
+          <ul>
+            <li class="to-left">
+              <a href="#">Информация</a>
+            </li>
+            <li class="to-left">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="to-right">
+              <a href="search-result.html">Гостиницы</a>
+            </li>
+            <li class="to-right">
+              <a href="#">Карта штата</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="index-logo">
+          <a href="index.html">
+            <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="container search-form-page">
+      <h1 class="search-form-title">Поиск гостиницы в Седоне</h1>
+      <form class="search-form no-js-form" action="#" method="get">
+        <div class="form-date-text">
+          <label for="date-text-in">Дата заезда:</label>
+          <input id="date-text-in" type="text" name="date-text-in" placeholder="24 апреля 2016">
+          <i class="icon-calendar date-in"></i>
+        </div>
+        <div class="form-date-text">
+          <label for="date-text-out">Дата выезда:</label>
+          <input id="date-text-out" type="text" name="date-text-out" placeholder="4 июля 2016">
+          <i class="icon-calendar date-out"></i>
+        </div>
+        <div class="steppers clearfix">
+          <div class="stepper-adults to-left">
+            <label for="stepper-adults">Взрослые:</label>
+            <button class="icon-minus" type="button"></button>
+            <input id="stepper-adults" type="text" name="stepper-adults" placeholder="2">
+            <button class="icon-plus" type="button"></button>
+          </div>
+          <div class="stepper-kids to-right">
+            <label for="stepper-kids">Дети:</label>
+            <button class="icon-minus" type="button"></button>
+            <input id="stepper-kids" type="text" name="stepper-kids" placeholder="0">
+            <button class="icon-plus" type="button"></button>
+          </div>
+        </div>
+        <button class="btn-search" type="submit">Найти</button>
+      </form>
+    </main>
+    <footer class="secondary-footer">
+      <div class="footer-container clearfix">
+        <section class="footer-visit to-left">
+          #VisitSedona
+        </section>
+        <section class="footer-social to-left">
+          <a class="icon-twitter" title="Twitter" href="https://twitter.com/"></a>
+          <a class="icon-facebook" title="Facebook" href="https://www.facebook.com/"></a>
+          <a class="icon-youtube" title="YouTube" href="https://www.youtube.com/"></a>
+        </section>
+        <section class="footer-copyright to-right">
+          <p>Website by</p>
+          <a href="https://htmlacademy.ru"></a>
+        </section>
+      </div>
+    </footer>
+  </div></body>
+</html>
